@@ -2,13 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Top from './Top';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  //StrictMode : 디버그하기 위함
   <React.StrictMode>
-    <Top />
     <App />
   </React.StrictMode>
 );
