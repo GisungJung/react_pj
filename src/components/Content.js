@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-class Contents extends Component {
+class Content extends Component {
     render() {
       return(
         <article>
@@ -11,4 +11,4 @@ class Contents extends Component {
     }
   }
 
-  export default Contents;
+  export default Content;
