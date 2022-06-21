@@ -31,13 +31,14 @@ class App extends Component {
     }
     return(
     <div className="App">
-      {/* <Subject title={this.state.Subject.title} sub={this.state.Subject.sub}></Subject> */}
-      <header>
-          <h1><a href="/" onClick={function(e){
-            e.preventDefault();
-          }} >{this.state.Subject.title}</a></h1>
-          {this.state.Subject.sub}
-      </header>
+      {<Subject 
+          title={this.state.Subject.title} 
+          sub={this.state.Subject.sub}
+          onChangePage = {function(){
+            this.setState({mode : 'welcome'});
+          }.bind(this)}
+        >
+       </Subject>}
       <TOC data = {this.state.contents}>
         
       </TOC>
