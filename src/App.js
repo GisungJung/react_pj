@@ -3,6 +3,9 @@ import './App.css';
 import TOC from './components/TOC'; 
 import Content from './components/Content'; 
 import Subject from './components/Subject';
+import BtnGrp from './components/BtnGrp';
+
+
 class App extends Component {
   //생성자 초기화시킴
   constructor(props){
@@ -55,8 +58,16 @@ class App extends Component {
               selected_content_id : Number(id)
             });
           }.bind(this)} 
-          data = {this.state.contents}>
+          data = {this.state.contents}
+      >
       </TOC>
+      <BtnGrp 
+          onChangeM={function(_mode){
+            this.setState({
+              mode : _mode
+            });
+        }.bind(this)}> 
+      </BtnGrp>
       <Content title={_title} desc={_desc}></Content>
     </div>
     );
