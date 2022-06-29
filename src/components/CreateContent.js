@@ -13,7 +13,7 @@ class CreateContent extends Component {
             }.bind(this)}
           >
             <p><input type='text' name='title' placeholder="title"/></p>
-            <p><input type='textarea' name='desc' placeholder="내용을 입력하세요..."/></p>
+            <p><textarea type='' name='desc' placeholder="내용을 입력하세요..."></textarea></p>
             <p><input type='submit'/></p>
           </form>
         </article>
